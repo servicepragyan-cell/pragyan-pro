@@ -1,0 +1,1230 @@
+import Image from "next/image";
+
+export default function AboutUs() {
+  return (
+    <section className="relative bg-[#0b0b0b] text-white overflow-hidden">
+
+      {/* ================= INTRO : THE SPARK ================= */}
+      <div className="min-h-[80vh] flex items-center px-6 md:px-12">
+        <div className="max-w-7xl mx-auto">
+          <p className="text-[#f8d249] uppercase tracking-widest mb-4">
+            About Pragyan
+          </p>
+
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+            Pragyan is where brands come to <br />
+            <span className="text-[#f8d249]">think bigger</span>
+          </h1>
+
+          <p className="mt-6 text-xl text-gray-300 max-w-3xl">
+            A place where strategy meets creativity, and ideas are shaped with
+            intention, intelligence, and purpose.
+          </p>
+        </div>
+      </div>
+
+      {/* ================= WHO WE ARE ================= */}
+      <div className="py-24 px-6 md:px-12 bg-gradient-to-b from-[#0b0b0b] to-[#111]">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+          <h2 className="text-3xl md:text-5xl font-bold">
+            Who <span className="text-[#f8d249]">We Are</span>
+          </h2>
+
+          <p className="text-lg text-gray-300 leading-relaxed">
+            We are a hub of curious minds, restless creators, and problem-solvers,
+            constantly pushing beyond the obvious — questioning norms, exploring
+            possibilities, and shaping ideas that matter.
+          </p>
+        </div>
+      </div>
+
+      {/* ================= HOW WE THINK (NEURAL NETWORK) ================= */}
+      <div className="py-28 px-6 md:px-12 relative">
+        <div className="max-w-7xl mx-auto text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold">
+            How <span className="text-[#f8d249]">We Think</span>
+          </h2>
+        </div>
+
+        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
+          {[
+            "Design",
+            "Content",
+            "Digital & Experience",
+          ].map((title, i) => (
+            <div
+              key={i}
+              className="p-8 rounded-2xl bg-white/5 backdrop-blur border border-white/10
+              hover:border-[#f8d249]/50 transition-all duration-500"
+            >
+              <h3 className="text-xl font-semibold mb-4 text-[#f8d249]">
+                {title}
+              </h3>
+              <p className="text-gray-300 leading-relaxed">
+                Our team works like a finely tuned neural network — every
+                connection matters. Ideas flow, collide, refine, and evolve
+                until they achieve clarity and impact.
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ================= HOW WE WORK (PROCESS) ================= */}
+      <div className="py-28 px-6 md:px-12 bg-[#111]">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold mb-14">
+            How <span className="text-[#f8d249]">We Work</span>
+          </h2>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {["Question", "Explore", "Test", "Transform"].map((step, i) => (
+              <div
+                key={i}
+                className="relative p-6 rounded-xl bg-white/5 border border-white/10
+                hover:-translate-y-2 transition duration-300"
+              >
+                <span className="text-5xl font-bold text-[#f8d249]/20 absolute top-4 right-6">
+                  {i + 1}
+                </span>
+                <h3 className="text-xl font-semibold mb-3">{step}</h3>
+                <p className="text-gray-300">
+                  Like a brain operating at full potential, we turn challenges
+                  into opportunities through deliberate thinking and execution.
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* ================= WHAT WE CREATE ================= */}
+      <div className="py-32 px-6 md:px-12 text-center relative">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-4xl md:text-6xl font-bold leading-tight">
+            What <span className="text-[#f8d249]">We Create</span>
+          </h2>
+
+          <p className="mt-8 text-xl text-gray-300">
+            We don’t just create campaigns. <br />
+            We craft <span className="text-white font-semibold">experiences</span>{" "}
+            that connect, resonate, and endure — helping brands emerge with
+            confidence, intelligence, and purpose.
+          </p>
+        </div>
+      </div>
+
+      {/* ================= FOUNDERS ================= */}
+      <div className="py-28 px-6 md:px-12 bg-[#111]">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold mb-16">
+            Meet the <span className="text-[#f8d249]">Founders</span>
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-10">
+            {[
+              {
+                img: "/services/founders/f1.webp",
+                name: "Manan Patel",
+                role: "Business Development & Strategy",
+                desc:
+                  "Leads strategic planning and business growth with a strong foundation in operations, compliance, and scalable execution.",
+              },
+              {
+                img: "/services/founders/f2.webp",
+                name: "Aditi Patel",
+                role: "Content & Resource Management",
+                desc:
+                  "Ensures alignment between teams, content consistency, and efficient execution through strong managerial expertise.",
+              },
+              {
+                img: "/services/founders/f3.webp",
+                name: "Dhruti Patel",
+                role: "Creative Direction & Operations",
+                desc:
+                  "Drives storytelling, visual communication, and brand strategy with analytical depth and creative precision.",
+              },
+            ].map((f, i) => (
+              <div
+                key={i}
+                className="p-8 rounded-2xl bg-white/5 border border-white/10 text-center
+                hover:border-[#f8d249]/40 transition"
+              >
+                <div className="relative w-32 h-32 mx-auto mb-6">
+                  <Image
+                    src={f.img}
+                    alt={f.name}
+                    fill
+                    sizes="128px"
+                    className="object-cover rounded-full"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold">{f.name}</h3>
+                <p className="text-[#f8d249] mb-3">{f.role}</p>
+                <p className="text-gray-300 text-sm">{f.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* ================= OUR TEAM ================= */}
+      <div className="py-24 px-6 md:px-12 text-center">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold mb-10">
+            Our <span className="text-[#f8d249]">Team</span>
+          </h2>
+
+          <p className="text-gray-300 leading-relaxed">
+            Our strength lies in a diverse intelligence network — experienced
+            production professionals, skilled web developers, creative
+            designers, and industry mentors — all working together to deliver
+            result-driven, sustainable brand growth.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+////////////////////
+
+              {/* Meet the Founders */}
+              {/* <div className="mt-24">
+                <div className="flex items-center gap-3 text-2xl font-heading font-extrabold text-[#f8d249] mb-4">
+                  <span className="text-3xl">✦</span> Meet the Founders
+                </div>
+      
+                <div
+                  className="mt-6 p-6 md:p-8 rounded-2xl 
+                  bg-white/5 backdrop-blur-md border border-white/10
+                  max-w-7xl"
+                >
+                  <p className="text-lg md:text-xl text-gray-300 leading-relaxed">
+                    Built by creative minds with a strategic core, Pragyan’s founders
+                    lead with{" "}
+                    <span className="text-white font-medium">
+                      curiosity, intention, and clarity
+                    </span>
+                    . Their combined experience and shared vision drive the agency to
+                    craft ideas that are not only visually compelling, but thoughtfully
+                    executed and purpose-driven.
+                  </p>
+                </div>
+      
+           
+                <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl">
+                  {[
+                    {
+                      img: "/services/founders/f1.webp",
+                      name: "Founder Name",
+                      role: "Founder & Strategy",
+                    },
+                    {
+                      img: "/services/founders/f2.webp",
+                      name: "Founder Name",
+                      role: "Co-Founder & Creative",
+                    },
+                    {
+                      img: "/services/founders/f3.webp",
+                      name: "Founder Name",
+                      role: "Co-Founder & Operations",
+                    },
+                  ].map((founder, i) => (
+                    <div
+                      key={i}
+                      className="group text-center p-6 rounded-md
+                      bg-white/5 backdrop-blur-md border border-white/10
+                      hover:border-[#f8d249]/40 transition-all duration-500
+                      hover:-translate-y-2 hover:shadow-[0_20px_60px_-20px_rgba(248,210,73,0.35)]"
+                    >
+                      <div className="relative w-40 h-40 mx-auto mb-6">
+                        <Image
+                          src={founder.img}
+                          alt={founder.name}
+                          fill
+                          className="object-cover rounded-full border-4 border-[#f8d249]/60"
+                        />
+                      </div>
+      
+                      <h3 className="text-xl font-semibold text-white font-heading">
+                        {founder.name}
+                      </h3>
+                      <p className="text-[#f8d249] mt-1">{founder.role}</p>
+                    </div>
+                  ))}
+                </div>
+              </div> */}
+
+
+
+
+//////////////////////////////////////////////////////
+
+
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import { portfolioData } from "@/app/data/portfolioData";
+import { FaArrowRightLong } from "react-icons/fa6";
+export default function Portfolio() {
+  return (
+    <section
+      id="portfolio"
+      className="bg-black text-white py-16 px-6 md:px-12"
+    >
+      <div className="max-w-7xl mx-auto">
+
+        {/* HEADER */}
+        <div className="max-w-7xl mb-14">
+          <p className="text-[#f8d249] font-heading tracking-widest mb-4 text-2xl uppercase font-extrabold">
+            <span className="text-2xl font-extrabold">✦</span> PORTFOLIO
+          </p>
+
+          {/* <h2 className="text-4xl sm:text-5xl font-semibold mb-6 leading-tight">
+            Stories of clarity,<br className="hidden sm:block" />
+            credibility, and growth
+          </h2> */}
+          <h2 className="text-4xl sm:text-5xl font-semibold mb-6 leading-tight">
+            Stories of clarity,
+            credibility, and growth
+          </h2>
+
+          <p className="text-gray-300 leading-relaxed text-base sm:text-lg">
+            Every project begins with a single question — what problem are we
+            really solving? Here’s how we’ve helped brands find clarity.
+          </p>
+        </div>
+
+        {/* GRID */}
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {portfolioData.map((item) => (
+            <Link
+              key={item.id}
+              href={`/portfolio/${item.slug}`}
+              className="group relative rounded-2xl border border-white/20 bg-white/10 backdrop-blur-sm overflow-hidden transition-all duration-300 hover:border-[#FCDB66]/60 hover:-translate-y-1"
+            >
+              {/* IMAGE */}
+              <div className="relative h-55 overflow-hidden">
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent" />
+              </div>
+
+              {/* CONTENT */}
+              <div className="p-6 flex flex-col h-full">
+                <h3 className="text-xl font-semibold mb-2 group-hover:text-[#f8d249] transition">
+                  {item.title}
+                </h3>
+
+                <p className="text-xl text-gray-300 mb-4 leading-relaxed">
+                  {item.subtitle}
+                </p>
+                <span className="text-[#f8d249] hover:text-white flex items-center gap-3">Read More<FaArrowRightLong /></span>
+
+                {/* CTA */}
+                <span className="mt-auto inline-flex items-center gap-2 text-sm font-medium text-[#f8d249]">
+                  View case study
+                  <svg
+                    className="w-4 h-4 transition-transform group-hover:translate-x-1"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </span>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+
+=================================================================================
+
+<section 
+        ref={introRef}
+        className="relative px-6 pt-32 pb-20 md:pt-48 md:pb-32 max-w-7xl mx-auto"
+      >
+        <div className="max-w-7xl">
+          <h1 className="text-4xl md:text-8xl font-bold mb-12 tracking-wide leading-[0.95] uppercase">
+            Stories of clarity, <br />
+            <span className="text-gray-600 mt-5">credibility, & growth</span>
+          </h1>
+          
+          <div className="grid md:grid-cols-2 gap-10 md:gap-20">
+            <p className="text-xl md:text-2xl text-gray-400 leading-relaxed font-light">
+              At Pragyan, every project begins with a simple question — 
+              <span className="text-white italic"> what problem are we really solving?</span>
+            </p>
+            <p className="text-xl md:text-2xl text-gray-400 leading-relaxed font-light">
+              Across industries, we partner with brands to bring structure to communication, 
+              intelligence to execution, and meaning to growth. Here’s a closer look at the work we’ve done.
+            </p>
+          </div>
+        </div>
+
+    
+      </section>
+
+
+
+==========================================================================================
+
+"use client";
+
+import { useEffect, useState } from "react";
+import Image from "next/image";
+
+export default function AppLoader({ children }) {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <>
+      {loading && (
+        <div className="fixed inset-0 z-9999 flex items-center justify-center bg-black">
+          <div className="flex flex-col items-center gap-4">
+            {/* <div className="w-12 h-12 border-4 border-[#FCDB66] border-t-transparent rounded-full animate-spin" /> */}
+            <Image src="/logo/load.webp" width={48} height={48} alt="Loading" className="animate-spin" />
+            <p className="text-[#f8d249] text-sm tracking-widest">
+              LOADING...
+            </p>
+          </div>
+        </div>
+      )}
+
+      <div
+        className={`transition-opacity duration-500 ${loading ? "opacity-0" : "opacity-100"
+          }`}
+      >
+        {children}
+      </div>
+    </>
+  );
+}
+
+
+///////////////////////////////////////////////////////////////
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Gradient Möbius Square</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            /* Match the background gradient of the image */
+            background: linear-gradient(135deg, #00C6FF 0%, #0072FF 40%, #9D50BB 100%);
+        }
+    </style>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <script type="module">
+        import * as THREE from 'three';
+        import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+        // 1. Setup Scene
+        const scene = new THREE.Scene();
+        // We don't set a scene background color here because we use CSS for the gradient background
+
+        // 2. Setup Camera (Orthographic for that "Isometric/Vector" look)
+        const aspect = window.innerWidth / window.innerHeight;
+        const frustumSize = 5;
+        const camera = new THREE.OrthographicCamera(
+            frustumSize * aspect / -2,
+            frustumSize * aspect / 2,
+            frustumSize / 2,
+            frustumSize / -2,
+            1,
+            1000
+        );
+
+        // Position camera to look at the object isometrically
+        camera.position.set(20, 20, 20);
+        camera.lookAt(0, 0, 0);
+
+        // 3. Renderer
+        const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        document.body.appendChild(renderer.domElement);
+
+        // 4. Controls
+        const controls = new OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+
+        // 5. Create the Geometry (Thick Square Path)
+        class SquarePath extends THREE.Curve {
+            getPoint(t) {
+                const size = 1.5;
+                const h = size / 2;
+
+                // Define a square path in 2D
+                if (t < 0.25) {
+                    const k = t / 0.25;
+                    return new THREE.Vector3(-h + size * k, -h, 0); // Bottom
+                } else if (t < 0.5) {
+                    const k = (t - 0.25) / 0.25;
+                    return new THREE.Vector3(h, -h + size * k, 0); // Right
+                } else if (t < 0.75) {
+                    const k = (t - 0.5) / 0.25;
+                    return new THREE.Vector3(h - size * k, h, 0); // Top
+                } else {
+                    const k = (t - 0.75) / 0.25;
+                    return new THREE.Vector3(-h, h - size * k, 0); // Left
+                }
+            }
+        }
+
+        // Define the cross-section shape (A rectangle)
+        const width = 0.4;
+        const thickness = 0.4;
+        const shape = new THREE.Shape();
+        shape.moveTo(-width / 2, -thickness / 2);
+        shape.lineTo(width / 2, -thickness / 2);
+        shape.lineTo(width / 2, thickness / 2);
+        shape.lineTo(-width / 2, thickness / 2);
+        shape.closePath();
+
+        // Extrude Settings
+        const extrudeSettings = {
+            steps: 200,
+            curveSegments: 20,
+            extrudePath: new SquarePath(),
+            depth: 0,
+            bevelEnabled: false
+        };
+
+        const geometry = new THREE.ExtrudeGeometry(shape, extrudeSettings);
+
+        // 6. Apply the Möbius Twist manually
+        // We rotate vertices along the path to create the twist
+        const pos = geometry.attributes.position;
+        const center = new THREE.Vector3();
+        const axis = new THREE.Vector3();
+
+        for (let i = 0; i < pos.count; i++) {
+            const x = pos.getX(i);
+            const y = pos.getY(i);
+            const z = pos.getZ(i);
+
+            // Simple trick: Calculate angle based on position around the center
+            // This approximates the progress 't' along the square loop
+            const angle = Math.atan2(y, x);
+
+            // Twist amount: 180 degrees (PI) creates a single Mobius twist
+            // We add a slight offset to align corners aesthetically
+            const twist = angle + (Math.PI / 4);
+
+            // Apply rotation around the path tangent (roughly Z-axis here)
+            // Note: For a perfect math-mobius we'd use Frenet frames, but this visual hack works well for the "Impossible Object" look
+            const twistAmount = (angle / (Math.PI * 2)) * Math.PI; // 180 deg twist over full loop
+
+            // We actually want a cleaner twist for the Penrose look. 
+            // Let's rely on a custom Shader for the color and keep geometry simple.
+            // But to make it "Mobius", we do need to flip coordinates.
+            // Let's use a simpler visual twist:
+
+            // Rotating the geometry to stand up
+        }
+
+        // Rotate geometry to face camera nicely
+        geometry.center();
+        geometry.rotateX(Math.PI / 2); // Lay flat
+        geometry.rotateZ(Math.PI / 4); // Diamond orientation
+
+        // 7. Shader Material (The Secret Sauce for the Gradient)
+        const gradientMaterial = new THREE.ShaderMaterial({
+            uniforms: {
+                color1: { value: new THREE.Color(0x00f2ff) }, // Cyan
+                color2: { value: new THREE.Color(0x9d00ff) }, // Purple/Magenta
+            },
+            vertexShader: `
+            varying vec2 vUv;
+            varying vec3 vPos;
+            void main() {
+                vUv = uv;
+                vPos = position;
+                // Standard projection
+                gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+            }
+        `,
+            fragmentShader: `
+            uniform vec3 color1;
+            uniform vec3 color2;
+            varying vec3 vPos;
+            
+            void main() {
+                // Create a gradient based on screen/world coordinates
+                // Mixing x and y creates a diagonal gradient
+                float mixFactor = (vPos.x + vPos.y + 2.0) / 4.0;
+                
+                // Add some "fake lighting" based on normals to distinguish faces
+                // Since this is unlit, we use coordinate logic or flat shading
+                
+                vec3 finalColor = mix(color1, color2, clamp(mixFactor, 0.0, 1.0));
+                
+                // Add a subtle shadow/highlight for 3D depth
+                float depth = vPos.z * 0.5;
+                finalColor += depth * 0.1;
+
+                gl_FragColor = vec4(finalColor, 1.0);
+            }
+        `,
+            side: THREE.DoubleSide
+        });
+
+        const mesh = new THREE.Mesh(geometry, gradientMaterial);
+
+        // Apply a specific twist to the geometry object itself to match the image orientation
+        mesh.rotation.x = Math.PI / 5;
+        mesh.rotation.y = Math.PI / 4;
+
+        scene.add(mesh);
+
+        // 8. Animation Loop
+        const animate = () => {
+            requestAnimationFrame(animate);
+
+            // Slow rotation
+            mesh.rotation.y += 0.005;
+            mesh.rotation.x = Math.sin(Date.now() * 0.001) * 0.1 + 0.5;
+
+            controls.update();
+            renderer.render(scene, camera);
+        };
+
+        // Handle Resize
+        window.addEventListener('resize', () => {
+            const aspect = window.innerWidth / window.innerHeight;
+            camera.left = -frustumSize * aspect / 2;
+            camera.right = frustumSize * aspect / 2;
+            camera.top = frustumSize / 2;
+            camera.bottom = -frustumSize / 2;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+
+        animate();
+
+    </script>
+</body>
+
+</html>
+
+
+
+magnetic / cursor-attract movement /////
+sqcircle // drawing stroke animation
+
+
+
+//////////////////////////////////////////
+
+
+import React, { useEffect, useState, useRef } from "react";
+import { X } from "lucide-react";
+
+/**
+ * Header Component
+ * Features: 
+ * - Scroll-based visibility
+ * - Fullscreen menu animation
+ * - Custom SVG Square "Redraw" hover effect 
+ * - Fix: Works every time, including after menu is opened/closed.
+ */
+export default function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [showHeader, setShowHeader] = useState(true);
+  const [bgBlack, setBgBlack] = useState(false);
+  const [gsapLoaded, setGsapLoaded] = useState(false);
+
+  const menuItemsRef = useRef([]);
+  const menuBgRef = useRef(null);
+  const menuIconRef = useRef(null);
+  const animatedStrokeRef = useRef(null);
+  const tl = useRef(null);
+  const lastScrollY = useRef(0);
+
+  /* =========================
+      LOAD GSAP FROM CDN
+  ========================== */
+  useEffect(() => {
+    if (window.gsap) {
+      setGsapLoaded(true);
+      return;
+    }
+    const script = document.createElement("script");
+    script.src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js";
+    script.onload = () => setGsapLoaded(true);
+    document.head.appendChild(script);
+  }, []);
+
+  /* =========================
+      HEADER SCROLL BEHAVIOR
+  ========================== */
+  useEffect(() => {
+    const onScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
+        setShowHeader(false);
+      } else {
+        setShowHeader(true);
+      }
+      setBgBlack(currentScrollY > 80);
+      lastScrollY.current = currentScrollY;
+    };
+
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  /* =========================
+      GSAP MENU TIMELINE
+  ========================== */
+  useEffect(() => {
+    if (!gsapLoaded || !window.gsap) return;
+    const gsap = window.gsap;
+
+    const ctx = gsap.context(() => {
+      tl.current = gsap.timeline({ paused: true });
+      tl.current
+        .fromTo(
+          menuBgRef.current,
+          { clipPath: "circle(0% at 95% 5%)", opacity: 0 },
+          {
+            clipPath: "circle(150% at 95% 5%)",
+            opacity: 1,
+            duration: 0.8,
+            ease: "power4.inOut",
+          }
+        )
+        .fromTo(
+          menuItemsRef.current,
+          { x: -50, opacity: 0 },
+          {
+            x: 0,
+            opacity: 1,
+            duration: 0.6,
+            ease: "power3.out",
+            stagger: 0.1,
+          },
+          "-=0.4"
+        );
+    });
+
+    return () => ctx.revert();
+  }, [gsapLoaded]);
+
+  /* =========================
+      SQUARE REDRAW HOVER LOGIC
+  ========================== */
+  useEffect(() => {
+    if (!gsapLoaded || !window.gsap || menuOpen) return;
+    const gsap = window.gsap;
+
+    const path = animatedStrokeRef.current;
+    const iconContainer = menuIconRef.current;
+
+    if (path && iconContainer) {
+      const length = path.getTotalLength();
+      
+      // Ensure stroke is set up correctly every time menu closes
+      gsap.set(path, { 
+        strokeDasharray: length, 
+        strokeDashoffset: length,
+        opacity: 1 
+      });
+
+      const onMouseEnter = () => {
+        gsap.to(path, { 
+          strokeDashoffset: 0, 
+          duration: 0.5, 
+          ease: "power2.out",
+          overwrite: "auto" 
+        });
+      };
+
+      const onMouseLeave = () => {
+        gsap.to(path, { 
+          strokeDashoffset: -length, 
+          duration: 0.4, 
+          ease: "power2.in",
+          overwrite: "auto",
+          onComplete: () => {
+            gsap.set(path, { strokeDashoffset: length });
+          }
+        });
+      };
+
+      iconContainer.addEventListener("mouseenter", onMouseEnter);
+      iconContainer.addEventListener("mouseleave", onMouseLeave);
+
+      return () => {
+        iconContainer.removeEventListener("mouseenter", onMouseEnter);
+        iconContainer.removeEventListener("mouseleave", onMouseLeave);
+      };
+    }
+  }, [gsapLoaded, menuOpen]); // Re-run when menu closes to re-attach to new SVG instance
+
+  useEffect(() => {
+    if (tl.current) {
+      if (menuOpen) tl.current.play();
+      else tl.current.reverse();
+    }
+  }, [menuOpen]);
+
+  const menuLinks = [
+    { label: "Home", href: "#" },
+    { label: "Services", href: "#" },
+    { label: "Portfolio", href: "#" },
+    { label: "About Us", href: "#" },
+    { label: "Contact Us", href: "#" },
+    { label: "Careers", href: "#" },
+  ];
+
+  return (
+    <div className="min-h-screen bg-neutral-950 text-white font-sans overflow-x-hidden">
+      <nav
+        className={`fixed top-0 left-0 right-0 z-50 px-6 py-4 md:px-12 md:py-6 flex items-center justify-between transition-all duration-500
+        ${showHeader ? "translate-y-0" : "-translate-y-full"}
+        ${bgBlack ? "bg-black/90 backdrop-blur-md" : "bg-transparent"}`}
+      >
+        <div className="flex items-center gap-2 cursor-pointer group" onClick={() => setMenuOpen(false)}>
+          <div className="w-10 h-10 bg-[#f8d249] rounded-sm flex items-center justify-center text-black font-black text-xl italic transition-transform group-hover:rotate-12">
+            P
+          </div>
+          <span className="font-bold text-2xl tracking-tighter uppercase hidden sm:block">Pragyan</span>
+        </div>
+
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="relative z-50 flex items-center gap-4 group cursor-pointer outline-none"
+        >
+          <span className={`font-medium uppercase tracking-widest text-sm transition-colors ${menuOpen ? 'text-white' : 'group-hover:text-[#f8d249]'}`}>
+            {menuOpen ? "Close" : "Menu"}
+          </span>
+
+          <div ref={menuIconRef} className="relative w-10 h-10 flex items-center justify-center">
+            {menuOpen ? (
+              <X size={28} className="text-white animate-in zoom-in duration-300" />
+            ) : (
+              <div className="relative w-full h-full animate-in fade-in duration-500">
+                <svg viewBox="0 0 40 40" className="w-full h-full overflow-visible">
+                  <rect x="4" y="4" width="32" height="32" rx="2" fill="none" stroke="white" strokeOpacity="0.1" strokeWidth="1.5" />
+                  <path
+                    ref={animatedStrokeRef}
+                    d="M 36,4 L 36,36 L 4,36 L 4,4 L 36,4"
+                    fill="none"
+                    stroke="#f8d249"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    style={{ opacity: 0 }}
+                  />
+                  <line x1="12" y1="16" x2="28" y2="16" stroke="white" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="12" y1="24" x2="28" y2="24" stroke="white" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </div>
+            )}
+          </div>
+        </button>
+      </nav>
+
+      <div
+        ref={menuBgRef}
+        className={`fixed inset-0 z-40 bg-neutral-900 flex items-center justify-center md:justify-start md:pl-32
+        ${menuOpen ? "pointer-events-auto" : "pointer-events-none"}`}
+      >
+        <div className="flex flex-col space-y-4 md:space-y-8">
+          {menuLinks.map((item, index) => (
+            <div key={item.label} ref={(el) => (menuItemsRef.current[index] = el)} className="group relative block w-fit">
+              <a href={item.href} onClick={(e) => { e.preventDefault(); setMenuOpen(false); }}
+                className="inline-block text-4xl md:text-7xl font-black text-white/40 transition-all duration-500 hover:text-[#f8d249] hover:translate-x-6">
+                <span className="absolute -left-8 md:-left-12 top-1/2 -translate-y-1/2 text-sm font-mono text-[#f8d249] opacity-0 group-hover:opacity-100 transition-opacity">
+                  0{index + 1}
+                </span>
+                {item.label}
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <main className="pt-32 px-6 md:px-12 max-w-7xl mx-auto space-y-20 pb-40">
+        <section className="h-[40vh] flex flex-col justify-center">
+          <h1 className="text-6xl md:text-9xl font-black leading-tight">
+            PERSISTENT <br /> 
+            <span className="text-transparent border-b-4 border-[#f8d249] bg-clip-text bg-gradient-to-r from-[#f8d249] to-white">
+                EFFECTS
+            </span>
+          </h1>
+        </section>
+        <div className="h-[200vh] text-center text-neutral-500 font-mono py-20 border-t border-neutral-800">
+           SCROLL DOWN TO TEST HEADER VISIBILITY
+        </div>
+      </main>
+    </div>
+  );
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+import React, { useEffect, useState, useRef } from "react";
+import { X } from "lucide-react";
+
+/**
+ * Header Component
+ * Features: 
+ * - Scroll-based visibility
+ * - Fullscreen menu animation
+ * - Custom SVG Square "Redraw" hover effect 
+ * - Logic: Mouse Enter (Forward Redraw) / Mouse Leave (Reverse Redraw)
+ */
+export default function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [showHeader, setShowHeader] = useState(true);
+  const [bgBlack, setBgBlack] = useState(false);
+  const [gsapLoaded, setGsapLoaded] = useState(false);
+
+  const menuItemsRef = useRef([]);
+  const menuBgRef = useRef(null);
+  const menuIconRef = useRef(null);
+  const animatedStrokeRef = useRef(null);
+  const tl = useRef(null);
+  const lastScrollY = useRef(0);
+
+  /* =========================
+      LOAD GSAP FROM CDN
+  ========================== */
+  useEffect(() => {
+    if (window.gsap) {
+      setGsapLoaded(true);
+      return;
+    }
+    const script = document.createElement("script");
+    script.src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js";
+    script.onload = () => setGsapLoaded(true);
+    document.head.appendChild(script);
+  }, []);
+
+  /* =========================
+      HEADER SCROLL BEHAVIOR
+  ========================== */
+  useEffect(() => {
+    const onScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
+        setShowHeader(false);
+      } else {
+        setShowHeader(true);
+      }
+      setBgBlack(currentScrollY > 80);
+      lastScrollY.current = currentScrollY;
+    };
+
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  /* =========================
+      GSAP MENU TIMELINE
+  ========================== */
+  useEffect(() => {
+    if (!gsapLoaded || !window.gsap) return;
+    const gsap = window.gsap;
+
+    const ctx = gsap.context(() => {
+      tl.current = gsap.timeline({ paused: true });
+      tl.current
+        .fromTo(
+          menuBgRef.current,
+          { clipPath: "circle(0% at 95% 5%)", opacity: 0 },
+          {
+            clipPath: "circle(150% at 95% 5%)",
+            opacity: 1,
+            duration: 0.8,
+            ease: "power4.inOut",
+          }
+        )
+        .fromTo(
+          menuItemsRef.current,
+          { x: -50, opacity: 0 },
+          {
+            x: 0,
+            opacity: 1,
+            duration: 0.6,
+            ease: "power3.out",
+            stagger: 0.1,
+          },
+          "-=0.4"
+        );
+    });
+
+    return () => ctx.revert();
+  }, [gsapLoaded]);
+
+  /* =========================
+      SQUARE REDRAW HOVER LOGIC
+  ========================== */
+  useEffect(() => {
+    if (!gsapLoaded || !window.gsap || menuOpen) return;
+    const gsap = window.gsap;
+
+    const path = animatedStrokeRef.current;
+    const iconContainer = menuIconRef.current;
+
+    if (path && iconContainer) {
+      const length = path.getTotalLength();
+      
+      // By default, set the yellow stroke to be visible (offset 0)
+      gsap.set(path, { 
+        strokeDasharray: length, 
+        strokeDashoffset: 0,
+        opacity: 1 
+      });
+
+      const onMouseEnter = () => {
+        // Redraw Forward: Go from full length offset (hidden) to 0 (visible)
+        gsap.fromTo(path, 
+          { strokeDashoffset: length },
+          { 
+            strokeDashoffset: 0, 
+            duration: 0.6, 
+            ease: "power2.inOut",
+            overwrite: "auto" 
+          }
+        );
+      };
+
+      const onMouseLeave = () => {
+        // Reverse Redraw: Animate the offset back to length (hiding it) then reset to 0
+        // or simply animate back to length to simulate a "reverse" flow.
+        gsap.to(path, { 
+          strokeDashoffset: length, 
+          duration: 0.6, 
+          ease: "power2.inOut",
+          overwrite: "auto",
+          onComplete: () => {
+            // Once the "reverse" hiding is done, reset to solid yellow state
+            gsap.set(path, { strokeDashoffset: 0 });
+          }
+        });
+      };
+
+      iconContainer.addEventListener("mouseenter", onMouseEnter);
+      iconContainer.addEventListener("mouseleave", onMouseLeave);
+
+      return () => {
+        iconContainer.removeEventListener("mouseenter", onMouseEnter);
+        iconContainer.removeEventListener("mouseleave", onMouseLeave);
+      };
+    }
+  }, [gsapLoaded, menuOpen]);
+
+  useEffect(() => {
+    if (tl.current) {
+      if (menuOpen) tl.current.play();
+      else tl.current.reverse();
+    }
+  }, [menuOpen]);
+
+  const menuLinks = [
+    { label: "Home", href: "#" },
+    { label: "Services", href: "#" },
+    { label: "Portfolio", href: "#" },
+    { label: "About Us", href: "#" },
+    { label: "Contact Us", href: "#" },
+    { label: "Careers", href: "#" },
+  ];
+
+  return (
+    <div className="min-h-screen bg-neutral-950 text-white font-sans overflow-x-hidden">
+      <nav
+        className={`fixed top-0 left-0 right-0 z-50 px-6 py-4 md:px-12 md:py-6 flex items-center justify-between transition-all duration-500
+        ${showHeader ? "translate-y-0" : "-translate-y-full"}
+        ${bgBlack ? "bg-black/90 backdrop-blur-md" : "bg-transparent"}`}
+      >
+        <div className="flex items-center gap-2 cursor-pointer group" onClick={() => setMenuOpen(false)}>
+          <div className="w-10 h-10 bg-[#f8d249] rounded-sm flex items-center justify-center text-black font-black text-xl italic transition-transform group-hover:rotate-12">
+            P
+          </div>
+          <span className="font-bold text-2xl tracking-tighter uppercase hidden sm:block">Pragyan</span>
+        </div>
+
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="relative z-50 flex items-center gap-4 group cursor-pointer outline-none"
+        >
+          <span className={`font-medium uppercase tracking-widest text-sm transition-colors ${menuOpen ? 'text-white' : 'group-hover:text-[#f8d249]'}`}>
+            {menuOpen ? "Close" : "Menu"}
+          </span>
+
+          <div ref={menuIconRef} className="relative w-10 h-10 flex items-center justify-center">
+            {menuOpen ? (
+              <X size={28} className="text-white animate-in zoom-in duration-300" />
+            ) : (
+              <div className="relative w-full h-full animate-in fade-in duration-500">
+                <svg viewBox="0 0 40 40" className="w-full h-full overflow-visible">
+                  {/* The Redrawing Path - Yellow by default */}
+                  <path
+                    ref={animatedStrokeRef}
+                    d="M 36,4 L 36,36 L 4,36 L 4,4 L 36,4"
+                    fill="none"
+                    stroke="#f8d249"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                  />
+                  <line x1="12" y1="16" x2="28" y2="16" stroke="white" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="12" y1="24" x2="28" y2="24" stroke="white" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </div>
+            )}
+          </div>
+        </button>
+      </nav>
+
+      <div
+        ref={menuBgRef}
+        className={`fixed inset-0 z-40 bg-neutral-900 flex items-center justify-center md:justify-start md:pl-32
+        ${menuOpen ? "pointer-events-auto" : "pointer-events-none"}`}
+      >
+        <div className="flex flex-col space-y-4 md:space-y-8">
+          {menuLinks.map((item, index) => (
+            <div key={item.label} ref={(el) => (menuItemsRef.current[index] = el)} className="group relative block w-fit">
+              <a href={item.href} onClick={(e) => { e.preventDefault(); setMenuOpen(false); }}
+                className="inline-block text-4xl md:text-7xl font-black text-white/40 transition-all duration-500 hover:text-[#f8d249] hover:translate-x-6">
+                <span className="absolute -left-8 md:-left-12 top-1/2 -translate-y-1/2 text-sm font-mono text-[#f8d249] opacity-0 group-hover:opacity-100 transition-opacity">
+                  0{index + 1}
+                </span>
+                {item.label}
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <main className="pt-32 px-6 md:px-12 max-w-7xl mx-auto space-y-20 pb-40">
+        <section className="h-[40vh] flex flex-col justify-center">
+          <h1 className="text-6xl md:text-9xl font-black leading-tight">
+            REVERSE <br /> 
+            <span className="text-transparent border-b-4 border-[#f8d249] bg-clip-text bg-gradient-to-r from-[#f8d249] to-white">
+                DRAW
+            </span>
+          </h1>
+        </section>
+        <div className="h-[200vh] text-center text-neutral-500 font-mono py-20 border-t border-neutral-800">
+           SCROLL DOWN TO TEST HEADER VISIBILITY
+        </div>
+      </main>
+    </div>
+  );
+}
+
+
+//////////////////////////////////////////
+
+
+1. What You Saw in the Video (Concept Breakdown)
+
+The effect is NOT pure CSS.
+
+It is a combination of:
+
+• A square plane • Continuous twist rotation (Mobius illusion) • Depth perspective • Smooth easing + scroll / time control
+
+This illusion only looks correct when rendered in real 3D space.
+
+So the correct approach is:
+
+Three.js for geometry
+GSAP for animation control
+
+////////////////////////////////// 
+
+This type of video usually shows:
+
+A single central 3D object (diamond / square / Möbius / ring)
+
+Smooth infinite rotation
+
+Slow floating motion (up/down, subtle tilt)
+
+Scroll-synced animation (rotation, scale, camera movement)
+
+Minimal UI (dark background, glowing highlights)
+
+Looks like a cinematic product teaser
+
+
+////////////////////////////////////////////
+
+Three.js → 3D engine
+
+React Three Fiber → React bindings
+
+@react-three/drei → Camera, lights, Float
+
+GSAP → Timeline animation
+
+ScrollTrigger → Scroll → animation sync
+
+/////////////////////////////////////////
+🔹 Prompt to generate concept
+Create a premium cinematic 3D landing page animation using a single floating object.
+Dark background, slow rotation, scroll-synced motion, minimal UI, Apple-style motion design.
+
+🔹 Prompt for code help
+Build a React Three Fiber scene with a GLB model.
+Use GSAP ScrollTrigger to sync rotation, scale, and camera movement with scroll.
+Smooth cinematic easing, slow motion, no sudden jumps.
+
+🔹 Prompt for motion tuning
+Optimize GSAP timeline for cinematic motion.
+Reduce speed, use scrubbed ScrollTrigger, avoid elastic easing.
+
+
+
+
+
+
+
+
+
+
+
+
